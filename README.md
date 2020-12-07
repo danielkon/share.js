@@ -2,7 +2,7 @@
 
 ## Установка
 
-<a href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-outline-primary" download>Скачать share.js</a>
+<a target="_blank" href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-primary" download>Скачать share.js</a>
 
 ## Простое использование:
 

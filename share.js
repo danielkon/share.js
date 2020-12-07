@@ -18,7 +18,7 @@ function share(social, options){
 
 	// Готовим ссылку для:
 	// Фейсбука
-	if (social === "fb") {
+	if (social == "fb") {
 		result = "https://www.facebook.com/sharer.php";
 		result += "?u="+encodeURIComponent(url);
 		if (text) {result += "&quote="+encodeURIComponent(text);}
@@ -26,7 +26,7 @@ function share(social, options){
 	}
 
 	// или для Твиттера
-	if (social === "tw") {
+	if (social == "tw") {
 		result = "https://twitter.com/intent/tweet";
 		result += "?url="+encodeURIComponent(url);
 		if (text && hashtags) {result += "&text="+encodeURIComponent(text+" "+hashtags);}
@@ -37,7 +37,7 @@ function share(social, options){
 	}
 
 	// или для ВКонтакте
-	if (social === "vk") {
+	if (social == "vk") {
 		result = "https://vk.com/share.php";
 		result += "?url="+encodeURIComponent(url);
 		if (text && hashtags) {result += "&comment="+encodeURIComponent(text+" "+hashtags);}
@@ -48,7 +48,7 @@ function share(social, options){
 	}
 
 	// или для Телеграма
-	if (social === "tg") {
+	if (social == "tg") {
 		result = "https://t.me/share/url";
 		result += "?url="+encodeURIComponent(url);
 		if (text && hashtags) {result += "&text="+encodeURIComponent(text+" "+hashtags);}

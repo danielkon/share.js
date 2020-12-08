@@ -26,7 +26,7 @@
 ```javascript
 share ( 
 
-    'fb', 
+    'vk', 
     
     {
         url: 'https://danielkon.com/?a=1&b=2',

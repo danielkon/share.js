@@ -2,7 +2,7 @@
 
 ## 1. Установка
 
-<p><a target="_blank" href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-primary mb-5" download>Скачать share.js</a></p>
+<a target="_blank" href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-primary mb-5" download>Скачать share.js</a><br><br>
 `&lt;script src=&quot;https://danielkon.github.io/share/share.js&quot;&gt;&lt;/script&gt;`
 
 ## 2. Простое использование:

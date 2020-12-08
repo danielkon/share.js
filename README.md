@@ -17,9 +17,7 @@
 ## 3. Сложное использование: 
 
 ```javascript
-share (
-    "fb", 
-    {
+share ( "fb", {
         url: "https://danielkon.com?a=Австралия&b=Бразилия",
         text: "Тут будет ваш текст!",
         hashtags: "#первый #второй #третий"

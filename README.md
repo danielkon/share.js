@@ -26,7 +26,7 @@ share (
     "fb", 
     
     {
-        url: "https://google.com?search?q=URL&20адрес&20с&20параметрами",
+        url: "https://www.google.com/search?q=URL+%D0%B0%D0%B4%D1%80%D0%B5%D1%81+%D1%81+%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC%D0%B8",
         text: "Текст",
         hashtags: "#первыйхештег #второйхештег #третийхештег"
     }

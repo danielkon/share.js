@@ -3,7 +3,7 @@
 ## 1. Установка
 
 <a target="_blank" href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-primary mb-5" download>Скачать share.js</a><p> </p>
-<p>или скопировать GitHub CDN: </p>
+<p>или взять с GitHub CDN: </p>
 
 `<script src="https://danielkon.github.io/share/share.js"></script>`
 

@@ -26,12 +26,12 @@
 ```javascript
 share ( 
 
-    "fb", 
+    'fb', 
     
     {
-        url: "https://www.google.com/search?q=URL+адрес+с+параметрами",
-        text: "Ваш замечательный текст!",
-        hashtags: "#первыйхештег #второйхештег #третийхештег"
+        url: 'https://www.google.com/search?q=URL+адрес+с+параметрами',
+        text: 'Ваш замечательный текст!',
+        hashtags: '#первыйхештег #второйхештег #третийхештег'
     }
     
 );

@@ -29,7 +29,7 @@ share (
     'fb', 
     
     {
-        url: 'https://www.google.com/search?q=URL',
+        url: 'https://danielkon.com/?a=1&b=2',
         text: 'Ваш замечательный текст!',
         hashtags: '#первыйхештег #второйхештег #третийхештег'
     }

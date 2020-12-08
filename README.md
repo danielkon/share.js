@@ -9,10 +9,12 @@
 
 ## 2. Простое использование:
 
-`<button onclick="share('fb');">Фейсбук</button>`<br>
-`<button onclick="share('tw');">Твиттер</button>`<br>
-`<button onclick="share('vk');">ВКонтакте</button>`<br>
-`<button onclick="share('tg');">Телеграм</button>`<br>
+```html
+<button onclick="share('fb');">Фейсбук</button>
+<button onclick="share('tw');">Твиттер</button>
+<button onclick="share('vk');">ВКонтакте</button>
+<button onclick="share('tg');">Телеграм</button>
+```
 
 ## 3. Сложное использование: 
 

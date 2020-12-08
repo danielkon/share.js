@@ -29,7 +29,7 @@ share (
     'fb', 
     
     {
-        url: 'https://www.google.com/search?q=Адрес',
+        url: 'https://www.google.com/search?q=URL',
         text: 'Ваш замечательный текст!',
         hashtags: '#первыйхештег #второйхештег #третийхештег'
     }

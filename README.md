@@ -18,10 +18,14 @@
 
 ```javascript
 share ( 
-    "fb", {
+
+    "fb", 
+    
+    {
         url: "https://danielkon.com?a=Австралия&b=Бразилия",
         text: "Тут будет ваш текст!",
         hashtags: "#первый #второй #третий"
     }
+    
 );
 ```

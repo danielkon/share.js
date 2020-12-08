@@ -26,9 +26,9 @@ share (
     "fb", 
     
     {
-        url: "https://danielkon.com?a=Австралия&b=Бразилия",
-        text: "Тут будет ваш текст!",
-        hashtags: "#первый #второй #третий"
+        url: "https://google.com?search?q=URL адрес с параметрами",
+        text: "Текст",
+        hashtags: "#первыйхештег #второйхештег #третийхештег"
     }
     
 );

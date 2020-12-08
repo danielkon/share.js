@@ -14,3 +14,10 @@
 `<button onclick="share('vk');">ВКонтакте</button>`<br>
 `<button onclick="share('tg');">Телеграм</button>`<br>
 
+## 3. Сложное использование: 
+
+`share("fb", {`<br>
+`   url: "https://danielkon.com?a=Австралия&b=Бразилия", `<br>
+`   text: "Тут будет ваш текст!", `<br>
+`   hashtags: "#первый #второй #третий" `<br>
+}); `<br>

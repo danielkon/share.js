@@ -15,6 +15,7 @@ function share(social, options){
 	let text = options.text || "";
 	let hashtags = options.hashtags || "";
 	let result = "";
+	let target = options.target || "";
 
 	// Готовим ссылку для:
 	// Фейсбука
@@ -59,7 +60,14 @@ function share(social, options){
 	}
 
 	// Если условие соц. сети сработало, то херачим всплывающее окно с шарингом
-	if (result) {window.open(result,'_blank','toolbar=0,status=0,width=626,height=436');}
+	if (result) {
+		if (target == "_blank") {
+			window.open(result,target,'toolbar=0,status=0,width=626,height=436');
+		}
+		else {
+			window.open(result);
+		}
+	}
 	// Иначе посылаем пользователя в пешее эротическое путешествие
 	else {alert('Can’t share on this social network');}
 

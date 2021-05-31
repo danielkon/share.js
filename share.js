@@ -65,7 +65,7 @@ function share(social, options){
 			window.open(result,target,'toolbar=0,status=0,width=626,height=436');
 		}
 		else {
-			window.open(result);
+			window.location(result);
 		}
 	}
 	// Иначе посылаем пользователя в пешее эротическое путешествие

@@ -61,7 +61,7 @@ function share(social, options){
 
 	// Если условие соц. сети сработало, то херачим всплывающее окно с шарингом
 	if (result) {
-		if (target == "_blank") {
+		if (target) {
 			window.open(result,target,'toolbar=0,status=0,width=626,height=436');
 		}
 		else {

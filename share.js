@@ -15,7 +15,7 @@ function share(social, options){
 	let text = options.text || "";
 	let hashtags = options.hashtags || "";
 	let result = "";
-	let target = options.target || "_top";
+	let target = options.target || "_self";
 
 	// Готовим ссылку для:
 	// Фейсбука

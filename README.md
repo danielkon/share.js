@@ -2,11 +2,11 @@
 
 ## 1. Установка
 
-<a target="_blank" href="https://danielkon.github.io/share/share.js" class="btn btn-lg btn-primary mb-5" download>Скачать share.js</a><p> </p>
+<a target="_blank" href="https://danielkon.github.io/share.js/share.js" class="btn btn-lg btn-primary mb-5" download>Скачать share.js</a><p> </p>
 <p>или взять с GitHub CDN: </p>
 
 ```html
-<script src="https://danielkon.github.io/share/share.js"></script>
+<script src="https://danielkon.github.io/share.js/share.js"></script>
 ```
 
 ## 2. Простое использование:

@@ -64,8 +64,8 @@ function share(social, options){
 	
 		// Тестируем шаринг картинок
 		let test_fetched = fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
-		let test_blob = fetched.blob();
-		let test_file = new File([blob], 'image.png', { type: 'image/png' });
+		let test_blob = test_fetched.blob();
+		let test_file = new File([test_blob], 'image.png', { type: 'image/png' });
 		
 		data = {
 			text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',

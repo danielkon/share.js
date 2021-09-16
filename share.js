@@ -5,7 +5,7 @@ function share(social, options){
 	if (event) event.preventDefault();
 	
 	// Записываем og:image
-	let image = document.querySelector("meta[property='og:image']").getAttribute("content")
+	let image = document.querySelector("meta[property='og:image']").getAttribute("content");
 
 	// Проверяем на наличие параметра options
 	if (!options) {
@@ -70,7 +70,7 @@ function share(social, options){
 		data = {
 		    	text: text+" "+hashtags,
 		    	url: url,
-			files: files;
+			files: files
 		}
 		if (!navigator.share(data)) {
 			alert('navigator.share() not supported');

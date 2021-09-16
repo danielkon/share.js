@@ -5,7 +5,7 @@ function share(social, options){
 	if (event) event.preventDefault();
 	
 	// Записываем og:image
-	let image = document.querySelector("meta[property='og:image']").getAttribute("content");
+	let image = document.querySelector("meta[property='og:image']").getAttribute("content") || null;
 
 	// Проверяем на наличие параметра options
 	if (!options) {

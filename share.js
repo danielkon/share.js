@@ -69,7 +69,7 @@ function share(social, options){
 		  })
 		  .then(function(blob) {
 		    var file = new File([blob], "image.png", {type: 'image/png'});
-		  }
+		  });
 		
 		data = {
 			text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',

@@ -74,6 +74,7 @@ function share(social, options){
 		}
 		catch(error) {
 			alert("Your browser does not support this feature\n"+ error);
+			console.error(error);
 		}
 	}
 }

@@ -73,7 +73,7 @@ function share(social, options){
 			navigator.share(data)
 		}
 		catch(error) {
-			console.log(error);
+			alert(error);
 		}
 	}
 }

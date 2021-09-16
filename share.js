@@ -63,8 +63,8 @@ function share(social, options){
 	if (social == "test") {
 	
 		// Тестируем шаринг картинок
-		let test_fetched = await fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
-		let test_blob = await fetched.blob();
+		let test_fetched = fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
+		let test_blob = fetched.blob();
 		let test_file = new File([blob], 'image.png', { type: 'image/png' });
 		
 		data = {

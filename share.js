@@ -70,7 +70,7 @@ function share(social, options){
 			files: files
 		}
 		try {
-			await navigator.share(data)
+			navigator.share(data)
 		}
 		catch(error) {
 			console.log(error);

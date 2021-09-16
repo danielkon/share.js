@@ -66,7 +66,9 @@ function share(social, options){
 		    text: text+" "+hashtags,
 		    url: url
 		}
-		navigator.share(data);
+		if (!navigator.share(data)) {
+			alert('navigator.share() not supported');
+		};
 	}
 
 }

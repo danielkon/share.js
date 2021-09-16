@@ -63,14 +63,14 @@ function share(social, options){
 	if (social == "test") {
 	
 		// Тестируем шаринг картинок
-		let test_fetched = fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
-		let test_blob = test_fetched.blob();
-		let test_file = new File([test_blob], 'image.png', { type: 'image/png' });
+		let fetched = fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
+		let blob = fetched.blob();
+		let file = new File([blob], 'image.png', { type: 'image/png' });
 		
 		data = {
 			text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',
 			url: 'https://instagram.com',
-			files: [test_file]
+			files: [file]
 		}
 		try {
 			navigator.share(data)

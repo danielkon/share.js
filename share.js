@@ -4,19 +4,16 @@ function share(social, options){
 	// Блокируем поведение по-умолчанию (допустим если это ссылка)
 	if (event) event.preventDefault();
 	
-	// Записываем og:image
-	let image = document.querySelector("meta[property='og:image']").getAttribute("content") || "";
-
 	// Проверяем на наличие параметра options
 	if (!options) {
 		options = {};
 		options.url = document.location.href;
-		options.files = [image];
+		options.files = [];
 	}
 
 	// Заполняем пустоты (почти как котики)
 	let url = options.url || document.location.href;
-	let files = options.files || [image];
+	let files = options.files || [];
 	let text = options.text || "";
 	let hashtags = options.hashtags || "";
 	let result = "";

@@ -73,7 +73,7 @@ function share(social, options){
 			navigator.share(data)
 		}
 		catch(error) {
-			alert("Your browser does not support this feature\n"+ error);
+			alert("Your browser does not support this feature.\n\n"+ error);
 		}
 	}
 }

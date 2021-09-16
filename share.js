@@ -73,8 +73,13 @@ function share(social, options){
 			navigator.share(data)
 		}
 		catch(error) {
-			alert("Your browser does not support this feature\n"+ error);
-			console.error(error);
+			if (error == "TypeError: navigator.share is not a function"){
+				alert("Your browser does not support this feature\n"+ error);
+			}
+			else {
+				alert(error);
+			}
+			
 		}
 	}
 }

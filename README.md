@@ -12,6 +12,7 @@
 ## 2. Простое использование:
 
 ```html
+<button onclick="share();">Поделиться</button>
 <button onclick="share('fb');">Фейсбук</button>
 <button onclick="share('tw');">Твиттер</button>
 <button onclick="share('vk');">ВКонтакте</button>

@@ -8,10 +8,12 @@ function share(social, options){
 	if (!options) {
 		options = {};
 		options.url = document.location.href;
+		options.files = {document.querySelector("meta[property='og:image']").getAttribute("content")};
 	}
 
 	// Заполняем пустоты (почти как котики)
 	let url = options.url || document.location.href;
+	let files = options.files || {document.querySelector("meta[property='og:image']").getAttribute("content")};
 	let text = options.text || "";
 	let hashtags = options.hashtags || "";
 	let result = "";
@@ -63,8 +65,9 @@ function share(social, options){
 	// Иначе открываем нативный для ОС диалог шаринга
 	else {
 		data = {
-		    text: text+" "+hashtags,
-		    url: url
+		    	text: text+" "+hashtags,
+		    	url: url,
+			files: files;
 		}
 		if (!navigator.share(data)) {
 			alert('navigator.share() not supported');

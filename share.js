@@ -65,8 +65,8 @@ function share(social, options){
 	// Иначе открываем нативный для ОС диалог шаринга
 	else {
 		data = {
-		    	text: text+" "+hashtags,
-		    	url: url,
+			text: text+" "+hashtags,
+			url: url,
 			files: files
 		}
 		try {

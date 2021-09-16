@@ -60,6 +60,27 @@ function share(social, options){
 		}
 	}
 	
+	if (social == "test") {
+	
+		// Тестируем шаринг картинок
+		let test_fetched = await fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png');
+		let test_blob = await fetched.blob();
+		let test_file = new File([blob], 'image.png', { type: 'image/png' });
+		
+		data = {
+			text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',
+			url: 'https://instagram.com',
+			files: [test_file]
+		}
+		try {
+			navigator.share(data)
+		}
+		catch(error) {
+			console.log(error);
+		}
+	
+	}
+	
 	// Если условие соц. сети сработало, то херачим всплывающее окно с шарингом
 	if (result) {window.open(result,"_blank",'toolbar=0,status=0,width=626,height=436');}
 	// Иначе открываем нативный для ОС диалог шаринга

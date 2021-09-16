@@ -57,11 +57,17 @@ function share(social, options){
 			if (hashtags) {result += "&text="+encodeURIComponent(hashtags);}
 		}
 	}
-
+	
 	// Если условие соц. сети сработало, то херачим всплывающее окно с шарингом
 	if (result) {window.open(result,"_blank",'toolbar=0,status=0,width=626,height=436');}
-	// Иначе посылаем пользователя в пешее эротическое путешествие
-	else {alert('Can’t share on this social network');}
+	// Иначе открываем нативный для ОС диалог шаринга
+	else {
+		data = {
+		    text: text+" "+hashtags,
+		    url: url
+		}
+		navigator.share(data);
+	}
 
 }
 // Конец супер крутого кода

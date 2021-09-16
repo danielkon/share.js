@@ -68,19 +68,13 @@ function share(social, options){
 			return response.blob()
 		})
 		.then(function(blob) {
-			let file = new File([blob], "image.png", {type: 'image/png'});
-				
+			let file = new File([blob], "image.png", {type: 'image/png'});	
 			data = {
 				text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',
 				url: 'https://instagram.com',
 				files: [file]
 			}
-			try {
-				navigator.share(data)
-			}
-			catch(error) {
-				console.log(error);
-			}
+			navigator.share(data)
 		});
 	}
 	

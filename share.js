@@ -69,10 +69,12 @@ function share(social, options){
 		    	url: url,
 			files: files
 		}
-		if (!navigator.share(data)) {
-			alert('navigator.share() not supported');
-		};
+		try {
+			await navigator.share(data)
+		}
+		catch(error) {
+			console.log(error);
+		}
 	}
-
 }
 // Конец супер крутого кода

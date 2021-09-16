@@ -64,25 +64,24 @@ function share(social, options){
 	
 		// Тестируем шаринг картинок
 		fetch("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png")
-		  .then(function(response) {
-		    return response.blob()
-		  })
-		  .then(function(blob) {
-		    let file = new File([blob], "image.png", {type: 'image/png'});
-		  });
-		
-		data = {
-			text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',
-			url: 'https://instagram.com',
-			files: [file]
-		}
-		try {
-			navigator.share(data)
-		}
-		catch(error) {
-			console.log(error);
-		}
-	
+		.then(function(response) {
+			return response.blob()
+		})
+		.then(function(blob) {
+			let file = new File([blob], "image.png", {type: 'image/png'});
+				
+			data = {
+				text: 'Instagram — bla bla bla #hashtag1 #hashtag2 #hashtag3',
+				url: 'https://instagram.com',
+				files: [file]
+			}
+			try {
+				navigator.share(data)
+			}
+			catch(error) {
+				console.log(error);
+			}
+		});
 	}
 	
 	// Если условие соц. сети сработало, то херачим всплывающее окно с шарингом

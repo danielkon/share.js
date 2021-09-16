@@ -68,7 +68,7 @@ function share(social, options){
 		    return response.blob()
 		  })
 		  .then(function(blob) {
-		    var file = new File([blob], "image.png", {type: 'image/png'});
+		    let file = new File([blob], "image.png", {type: 'image/png'});
 		  });
 		
 		data = {

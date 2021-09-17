@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>ДЕМО: Скрипт для шаринга в соц. сетях</title>
+		<title>danielkon / share.js — demo page</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 		<script src="share.js"></script>
@@ -18,48 +18,47 @@
 
 		<div class="container">
 
-			<h1 class="pb-5 pt-3 pt-md-5 mt-md-5">ДЕМО: Скрипт для шаринга в соц. сетях</h1>
+			<h1 class="pb-5 pt-3 pt-md-5 mt-md-5">danielkon / share.js — demo page</h1>
 			
-			<h2 class="h4 mb-4">1. Установка:</h2>
+			<h2 class="h4 mb-4">1. Installation:</h2>
 			<div class="row mb-4">
 				<div class="col-auto">
-					<a target="_blank" href="https://danielkon.github.io/share.js/share.js" class="btn btn-lg btn-primary mb-4" download>Скачать share.js</a>
-					<p>или взять с GitHub CDN: </p>
+					<a target="_blank" href="https://danielkon.github.io/share.js/share.js" class="btn btn-lg btn-primary mb-4" download>download share.js</a>
+					<p>OR grab link from GitHub: </p>
 					<div class="alert alert-primary" role="alert"><pre class="mb-0"><code>&lt;script src=&quot;https://danielkon.github.io/share.js/share.js&quot;&gt;&lt;/script&gt;</code></pre></div>
 				</div>
 			</div>
 					
 					
-			<h2 class="h4 mb-4">2. Простое использование:</h2>
+			<h2 class="h4 mb-4">2. Quick Usage:</h2>
 			
 			<div class="row mb-4">
 				<div class="col-auto">
 					<div class="btn-group-vertical btn-group-lg mb-4" role="group">
-						<button type="button" class="btn btn-outline-primary" onclick="share();">Поделиться<br>(native OS sharing dialog)</button>
-						<button type="button" class="btn btn-outline-primary" onclick="share('fb');">Фейсбук</button>
-						<button type="button" class="btn btn-outline-primary" onclick="share('tw');">Твиттер</button>
-						<button type="button" class="btn btn-outline-primary" onclick="share('vk');">ВКонтакте</button>
-						<button type="button" class="btn btn-outline-primary" onclick="share('tg');">Телеграм</button>
+						<button type="button" class="btn btn-outline-primary" onclick="share('fb');">Facebook</button>
+						<button type="button" class="btn btn-outline-primary" onclick="share('tw');">Twitter</button>
+						<button type="button" class="btn btn-outline-primary" onclick="share('vk');">VK</button>
+						<button type="button" class="btn btn-outline-primary" onclick="share('tg');">Telegram</button>
+						<button type="button" class="btn btn-outline-primary" onclick="share();">Share</button>
 					</div>
 				</div>
 				<div class="col-auto">
-<div class="alert alert-primary" role="alert"><pre class="mb-0"><code>&lt;button onclick=&quot;share();&quot;&gt;Поделиться&lt;/button&gt;
-&lt;button onclick=&quot;share('fb');&quot;&gt;Фейсбук&lt;/button&gt;
-&lt;button onclick=&quot;share('tw');&quot;&gt;Твиттер&lt;/button&gt;
-&lt;button onclick=&quot;share('vk');&quot;&gt;ВКонтакте&lt;/button&gt;
-&lt;button onclick=&quot;share('tg');&quot;&gt;Телеграм&lt;/button&gt;
+<div class="alert alert-primary" role="alert"><pre class="mb-0"><code>&lt;button onclick=&quot;share('fb');&quot;&gt;Facebook&lt;/button&gt;
+&lt;button onclick=&quot;share('tw');&quot;&gt;Twitter&lt;/button&gt;
+&lt;button onclick=&quot;share('vk');&quot;&gt;VK&lt;/button&gt;
+&lt;button onclick=&quot;share('tg');&quot;&gt;Telegram&lt;/button&gt;
+&lt;button onclick=&quot;share();&quot;&gt;Share&lt;/button&gt;
 </code></pre></div>
 				</div>
 			</div>
 			
 			
 			
-			<h2 class="h4 mb-4">3. Сложное использование:</h2>
+			<h2 class="h4 mb-4">3. Advanced Usage (via JavaScript):</h2>
 			
 			<div class="row mb-5">
 				<div class="col-auto">
 					<div class="btn-group-vertical mb-4" role="group">
-						<button type="button" class="btn btn-secondary" onclick="share(null, {url: 'https://danielkon.com/?utm_content=textlink&utm_source=danielkon.github.com&utm_campaign=1985_campaign', text: 'Awesome track! @danielkondj I am at a loss for words, this is one of the most genuine songs I have ever heard!', hashtags: '#synthwave #retrowave #vaporwave #outrun #neon #80saesthetic #cyberpunk #synthfam #ｓｙｎｔｈｗａｖｅ #danielkon'});">SHARE<br>(native OS sharing dialog)</button>
 						<button type="button" class="btn btn-secondary" onclick="share('fb', {url: 'https://danielkon.com/?utm_content=textlink&utm_source=danielkon.github.com&utm_campaign=1985_campaign', text: 'Awesome track! @danielkondj I am at a loss for words, this is one of the most genuine songs I have ever heard!', hashtags: '#synthwave #retrowave #vaporwave #outrun #neon #80saesthetic #cyberpunk #synthfam #ｓｙｎｔｈｗａｖｅ #danielkon'});">FACEBOOK</button>
 						<button type="button" class="btn btn-secondary" onclick="share('tw', {url: 'https://danielkon.com/?utm_content=textlink&utm_source=danielkon.github.com&utm_campaign=1985_campaign', text: 'Awesome track! @danielkondj I am at a loss for words, this is one of the most genuine songs I have ever heard!', hashtags: '#synthwave #retrowave #vaporwave #outrun #neon #80saesthetic #cyberpunk #synthfam #ｓｙｎｔｈｗａｖｅ #danielkon'});
 ">TWITTER</button>
@@ -67,9 +66,10 @@
 ">VK</button>
 						<button type="button" class="btn btn-secondary" onclick="share('tg', {url: 'https://danielkon.com/?utm_content=textlink&utm_source=danielkon.github.com&utm_campaign=1985_campaign', text: 'Awesome track! @danielkondj I am at a loss for words, this is one of the most genuine songs I have ever heard!', hashtags: '#synthwave #retrowave #vaporwave #outrun #neon #80saesthetic #cyberpunk #synthfam #ｓｙｎｔｈｗａｖｅ #danielkon'});
 ">TELEGRAM</button>
+						<button type="button" class="btn btn-secondary" onclick="share(null, {url: 'https://danielkon.com/?utm_content=textlink&utm_source=danielkon.github.com&utm_campaign=1985_campaign', text: 'Awesome track! @danielkondj I am at a loss for words, this is one of the most genuine songs I have ever heard!', hashtags: '#synthwave #retrowave #vaporwave #outrun #neon #80saesthetic #cyberpunk #synthfam #ｓｙｎｔｈｗａｖｅ #danielkon'});">SHARE</button>
 					</div>
 					
-					<p>Подробности на GitHub: <a target="_blank" href="https://github.com/danielkon/share.js">https://github.com/danielkon/share.js</a>
+					<p>For more info visit GitHub: <a target="_blank" href="https://github.com/danielkon/share.js">https://github.com/danielkon/share.js</a>
 					
 				</div>
 				

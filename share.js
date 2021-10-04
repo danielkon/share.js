@@ -69,17 +69,15 @@ function share(social, options){
 			url: url,
 			files: files
 		}
+		
 		try {
 			navigator.share(data)
 		}
 		catch(error) {
+			console.error(error);
 			if (error == "TypeError: navigator.share is not a function"){
-				alert("Your browser does not support this feature\n"+ error);
+				alert("Your browser does not support this feature");
 			}
-			else {
-				alert(error);
-			}
-			
 		}
 	}
 }

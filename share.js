@@ -64,7 +64,7 @@ function share(social, options){
 	if (result) {window.open(result,"_blank",'toolbar=0,status=0,width=626,height=436');}
 	// Иначе открываем нативный для ОС диалог шаринга
 	else {
-		data = {
+		let data = {
 			text: text+" "+hashtags,
 			url: url,
 			files: files
